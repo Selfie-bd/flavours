@@ -7,20 +7,14 @@ from tobrot.helper_funcs.upload_to_tg import upload_to_gdrive, upload_to_tg
 
 
 async def yt_playlist_downg(message, i_m_sefg, client, G_DRIVE):
-    url = None
-    if message.reply_to_message:
-        url = message.reply_to_message.text
-    else:
-        url = message.text.split()[1]
-    usr = message.message_id
-    messa_ge = i_m_sefg.reply_to_message
+ 
     fol_der = f"{usr}youtube"
     try:
         os.mkdir(fol_der)
     except:
         pass
     cmd = [
-        "youtube-dl",
+        "yt-dlp",
         "-i",
         "-f",
         "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4",
