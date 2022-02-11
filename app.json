@@ -1,12 +1,12 @@
 {
-  "name": "TorrentLeechBot",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram",
-  "logo": "https://images.unsplash.com/photo-1562907550-096d3bf9b25c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80",
+  "name": "flowers",
+  "description": "hai",
+  "logo": "",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/GopalSaraf/TorrentLeechBot",
-  "success_url": "https://t.me/torrentgs",
+  "repository": "https://github.com/Selfie-bd/flavours",
+  "success_url": "https://t.me/Groupdcbots",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
