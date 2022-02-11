@@ -142,7 +142,7 @@ if __name__ == "__main__":
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
         filters=filters.command([YTDL_COMMAND, GYTDL_COMMAND])
-        & filters.chat(chats=AUTH_CHANNEL) & filters.regex(*.https.*),
+        & filters.chat(chats=AUTH_CHANNEL) & filters.regex(pattern=".*https.*"),
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
